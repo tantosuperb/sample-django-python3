@@ -1,7 +1,8 @@
 # Set to a lower version than the latest (3.13 as of 2023.11.17)
 FROM python:3.12-alpine3.18
 
-# alpine 용 mysqlclient 설치용 패키지
+# alpine linux 용 python 관련 패키지
+# 1. mysqlclient
 RUN apk add gcc musl-dev mariadb-connector-c-dev
 
 WORKDIR /app
