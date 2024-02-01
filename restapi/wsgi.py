@@ -1,5 +1,5 @@
 """
-WSGI config for sample_django_python_3 project.
+WSGI config for restapi project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'restapi.settings')
 
 application = get_wsgi_application()
