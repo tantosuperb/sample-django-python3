@@ -14,10 +14,9 @@ RUN ${INSTALL_COMMAND}
 
 RUN sed -i 's/ALLOWED_HOSTS = \[]/ALLOWED_HOSTS = \["*"]/g' "$(find . -name settings.py)"
 
-#RUN django-admin startproject restapi .
-#RUN python manage.py startapp member
-
 ## 2. run with --app argument
 ENV START_COMMAND="python manage.py runserver --noreload 0:8000"
 ENTRYPOINT ${START_COMMAND}
+
+## CC. infinity loop for docker container exec
 #ENTRYPOINT while :; do echo 'Press <CTRL+C> to exit.'; sleep 1; done
