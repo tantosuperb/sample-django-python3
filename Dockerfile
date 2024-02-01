@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY . .
 
-# 1. install package
+## 1. install package
 ARG INSTALL_COMMAND="pip install -r requirements.txt"
 RUN ${INSTALL_COMMAND}
 
