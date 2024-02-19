@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('members/v1',include('member.urls'))
+    path('members/v1',include('member.urls')),
+    path('', include('member.urls')), # 샘플용으로 인덱스도 member 로 연결
 ]
