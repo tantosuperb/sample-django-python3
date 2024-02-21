@@ -21,5 +21,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('members/v1/',include('member.urls')),
-    path('', RedirectView.as_view(url="/members/v1/")), # 샘플용으로 인덱스도 member 로 연결
+    path('', RedirectView.as_view(url='/members/v1/')), # 샘플용으로 인덱스도 member 로 연결
 ]
