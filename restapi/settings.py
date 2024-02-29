@@ -113,8 +113,8 @@ DATABASES = {
         'NAME': 'project_db',
         'USER': 'root',
         'PASSWORD': 'password1!',
-        'HOST': 'p398f5979711051d705b10f674e9be19b.apppaas.app',
-        'PORT': '30081',
+        'HOST': 'p398f5979711051d705b10f674e9be19b',
+        'PORT': '3306',
     }
 }
 
