@@ -80,16 +80,16 @@ WSGI_APPLICATION = 'restapi.wsgi.application'
 DATABASES = {
     'default': {
         # InMemory sqlite3
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
 
         # docker-compose MySQL
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'project_db',
-        'USER': 'root',
-        'PASSWORD': 'test',
-        'HOST': 'f6da6eeb84d93f798b9f54c137e165ee6.apppaas.app',
-        'PORT': '30281',
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'project_db',
+        #'USER': 'root',
+        #'PASSWORD': 'test',
+        #'HOST': 'f6da6eeb84d93f798b9f54c137e165ee6.apppaas.app',
+        #'PORT': '30281',
 
         # docker-compose MariaDB
         # 'ENGINE': 'django.db.backends.mysql',
